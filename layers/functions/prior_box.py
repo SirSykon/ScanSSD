@@ -26,7 +26,7 @@ class PriorBox(object):
         for v in self.variance:
             if v <= 0:
                 raise ValueError('Variances must be greater than 0')
-
+    
     def forward(self):
         mean = []
 
